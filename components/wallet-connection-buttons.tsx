@@ -4,7 +4,7 @@ import { WalletDisconnectButton, WalletMultiButton } from "@solana/wallet-adapte
 
 export  function WalletConnectionButtons() {
   return (
-    <div className=" flex mt-4 justify-around">
+    <div className=" flex mt-7 justify-around">
         <div>
             <WalletMultiButton />
         </div>

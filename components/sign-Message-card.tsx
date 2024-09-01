@@ -51,22 +51,19 @@ export const SignMessage = () => {
       console.log(error)
 
     }
-
-    
-
   }
 
     return ( 
-        <Card>
+        <Card className="h-[430px] sm:h-[400px]">
           <WalletConnectionButtons />
-          <CardHeader>
+          <CardHeader className=" mt-4">
             <CardTitle>Sign Message</CardTitle>
             <CardDescription>
               Sign a message using your wallet
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            <div className="space-y-1">
+            <div className="space-y-1 mt-5 sm:mt-2">
               <Label htmlFor="message">Message</Label>
               <Input
                 onChange={(e) => { setMessage(e.target.value) } } 
@@ -74,8 +71,8 @@ export const SignMessage = () => {
               />
             </div>
           </CardContent>
-          <CardFooter>
-            <Button onClick={sign} >Sign</Button>
+          <CardFooter className="mt-5 sm:mt-2">
+            <Button className="w-full" onClick={sign} >Sign</Button>
           </CardFooter>
         </Card>
      );

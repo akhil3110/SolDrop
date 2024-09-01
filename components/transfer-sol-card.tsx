@@ -62,11 +62,11 @@ export const TransferSol = () => {
     }
 
     return ( 
-        <Card>
+        <Card className="h-[430px] sm:h-[400px]">
           <WalletConnectionButtons/>
           <CardHeader>
             <CardTitle>Transfer Sol</CardTitle>
-            <CardDescription>
+            <CardDescription className=" text-xs">
               Transfer Sol to another wallet by entering the recipient&apos;s address and the amount of Sol you want to send.
             </CardDescription>
           </CardHeader>
@@ -91,7 +91,7 @@ export const TransferSol = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <Button onClick={transferSol} >Send</Button>
+            <Button className="w-full" onClick={transferSol} >Send</Button>
           </CardFooter>
         </Card>
      );

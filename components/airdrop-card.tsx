@@ -31,10 +31,6 @@ export const AriDropCard = () => {
   const [amount, setAmount] = useState<number>(0)
   const [balance,setBalance] = useState(0)
 
-
-  
-    
-
   const getBalance = async() =>{
 
     if(!wallet.publicKey){
@@ -46,8 +42,6 @@ export const AriDropCard = () => {
   }
 
   
-
-
   const AddSol = async () => {
 
     if(amount <= 0){
@@ -61,9 +55,9 @@ export const AriDropCard = () => {
   }
 
     return ( 
-        <Card>
+        <Card className="h-[430px] sm:h-[400px]">
           <WalletConnectionButtons/>
-          <CardHeader>
+          <CardHeader className="mt-5">
             <CardTitle>Air Drop</CardTitle>
             <CardDescription>
               Air Drop Sol to your wallet
@@ -80,10 +74,10 @@ export const AriDropCard = () => {
               />
             </div>
           </CardContent>
-          <CardFooter>
+          <CardFooter className="mt-2 sm:mt-5">
             <div className="w-full flex flex-col gap-y-5 sm:flex-row justify-around">
-            <Button onClick={AddSol} >Add Sol</Button>
-            <div onClick={getBalance}  >
+            <Button className="w-full sm:w-40" onClick={AddSol} >Add Sol</Button>
+            <div className="w-full sm:w-40" onClick={getBalance}  >
               <ShowBalance balance={balance} />
             </div>
             </div>
