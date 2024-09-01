@@ -67,7 +67,7 @@ export const TransferSol = () => {
           <CardHeader>
             <CardTitle>Transfer Sol</CardTitle>
             <CardDescription>
-              Transfer Sol to another wallet by entering the recipient's address and the amount of Sol you want to send.
+              Transfer Sol to another wallet by entering the recipient&apos;s address and the amount of Sol you want to send.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
